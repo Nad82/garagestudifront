@@ -1,9 +1,9 @@
 import React from 'react'
 
-const vehicule = () => {
+const Vehicule = () => {
     return (
-        <div>vehicule</div>
+        <div>Vehicule</div>
     )
 }
 
-export default vehicule
+export default Vehicule

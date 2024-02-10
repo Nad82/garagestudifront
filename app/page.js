@@ -1,38 +1,25 @@
 "use client"
-import Link from "next/link"
+import { Box} from "@mui/material"
+import React from "react"
+import Header from "./Components/Header/page"
+import Footer from "./Components/Footer/page"
+import Typography from '@mui/material/Typography';
+import ImageAccueil from "./Components/ImageAccueil/page"
+
+
+
 
 
 export default function Home() {
+    
     return (
-        <div>
-            <header>
-                <Link href= "/">Home</Link> 
-                <nav>
-                    <Link href= "/header">Header</Link>
-                </nav>
-                <Link href= "/connexion">Connexion</Link>
-            </header>
-            <main>
-                <article>
-                    <section>
-                        <Link href= "/apropos">Apropos</Link>
-                    </section>
-                    <section>
-                        <Link href= "/services">Services</Link>
-                    </section>
-                    <section>
-                        <Link href= "/vehicule">Vehicules</Link>
-                    </section>
-                    <aside>
-                        <Link href= "/temoignage">Temoignages</Link>
-                    </aside> 
-                </article>         
-            </main>
-            <footer>
-                <nav>
-                    <Link href= "/footer">Footer</Link>
-                </nav>
-            </footer>
-        </div>
+        <Box>
+            <Header/>
+            <ImageAccueil/>
+            <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', marginTop:'20px'}}>
+                <Typography variant='h4' color='primary' style={{marginBottom:'20px'}}>Bienvenue sur le site du Garage V.Parrot</Typography>
+            </div>
+            <Footer/>
+        </Box>
     )
 }
